@@ -1,0 +1,43 @@
+.timeline {
+    margin-top: -20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-top: -65px;
+        padding-top: 95px;
+        padding-bottom: 70px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
+.timeline__title {
+    margin-bottom: 70px;
+    text-align: center;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-bottom: 50px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    .gradient {
+        background-position: center bottom 8px;
+        background-size: 100% 8px;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            background-position: center bottom 4px;
+        }
+    }
+}

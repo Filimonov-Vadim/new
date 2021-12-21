@@ -1,0 +1,18 @@
+.icons  {
+    display: flex; 
+
+    a {
+        margin-left: 26px;
+        
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        display: none;
+    }
+    
+}

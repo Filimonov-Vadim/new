@@ -1,0 +1,121 @@
+.contacts-form {
+	max-width: 500px;
+	padding: 50px;
+	z-index: 1;
+
+	background: #ffffff;
+	box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
+
+	input.form-field {
+		height: 39px;
+	}
+
+	/* Mobile */
+	@media (max-width: 899px) {
+		width: 400px;
+	}
+
+	/* Mobile XS */
+	@media (max-width: 767px) {
+		padding: 40px 10px;
+	}
+
+	@media (max-width: 640px) {
+		padding: 10px;
+		width: 290px;
+	}
+}
+
+.form-item {
+	position: relative;
+	margin-top: 12px;
+	margin-bottom: 30px;
+
+	border-bottom: 2px solid #e5e5e5;
+
+	&:hover,
+	&:focus {
+		border-bottom: 2px solid #ff543e;
+	}
+
+	textarea {
+		padding-top: 10px;
+		resize: none;
+	}
+
+	&:last-child {
+		border-bottom: none;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.fake-placeholder {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1;
+	color: #9d9d9d;
+
+	pointer-events: none;
+	transition: 0.2s;
+
+	/* Mobile XS */
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+
+.form-field {
+	outline: none;
+	width: 100%;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1;
+	color: #000000;
+
+	/* Mobile XS */
+	@media (max-width: 767px) {
+		font-size: 16px;
+	}
+}
+
+.form-btn {
+	/* Tablet */
+	@media (max-width: 1139px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	/* Mobile XS */
+	@media (max-width: 767px) {
+		width: 260px;
+		font-size: 20px;
+	}
+}
+
+.form-item.active {
+	border-bottom: 2px solid #ff543e;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.fake-placeholder.active {
+	transform: translateY(-100%);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	color: #eca73f;
+}
+
+.contact-form__success {
+	font-size: 28px;
+	text-align: center;
+	color: #ff543e;
+}

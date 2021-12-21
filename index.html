@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- encoding -->
+	<meta charset="UTF-8" />
+	<!-- Mobile support -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Title and SEO -->
+	<title>Вадим Филимонов - Портфолио</title>
+	<meta name="description" content="Описание страницы" />
+	<meta name="keywords" content="ключевые слова, фразы" />
+
+	<!-- Styles -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- Open Graph -->
+	<meta property="og:url" content="https://filwork.ru/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title"
+		content="Портфолио - Вадим Филимонов.Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ. " />
+	<meta property="og:description"
+		content="Портфолио - Вадим Филимонов.Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ." />
+	<meta property="og:image" content="./img/opengraph.jpg" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="./img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+
+		<symbol id="linkedin" width="32" height="32" viewBox="0 0 32 32">
+			<g>
+				<path
+					d="M7.44897 10.2947H1.02492C0.739808 10.2947 0.508789 10.5258 0.508789 10.8108V31.4485C0.508789 31.7336 0.739808 31.9647 1.02492 31.9647H7.44897C7.73408 31.9647 7.9651 31.7336 7.9651 31.4485V10.8108C7.9651 10.5258 7.73408 10.2947 7.44897 10.2947Z"
+					fill="black" />
+				<path
+					d="M4.23907 0.0351562C1.90163 0.0351562 0 1.93472 0 4.26958C0 6.60548 1.90163 8.50576 4.23907 8.50576C6.57466 8.50576 8.47474 6.60538 8.47474 4.26958C8.47484 1.93472 6.57466 0.0351562 4.23907 0.0351562Z"
+					fill="black" />
+				<path
+					d="M23.7892 9.78174C21.209 9.78174 19.3017 10.8909 18.1449 12.1512V10.8108C18.1449 10.5258 17.9138 10.2947 17.6287 10.2947H11.4766C11.1915 10.2947 10.9604 10.5258 10.9604 10.8108V31.4485C10.9604 31.7336 11.1915 31.9647 11.4766 31.9647H17.8866C18.1717 31.9647 18.4027 31.7336 18.4027 31.4485V21.2376C18.4027 17.7968 19.3373 16.4563 21.7359 16.4563C24.3481 16.4563 24.5557 18.6053 24.5557 21.4147V31.4486C24.5557 31.7337 24.7867 31.9648 25.0718 31.9648H31.4842C31.7693 31.9648 32.0004 31.7337 32.0004 31.4486V20.1285C32.0004 15.0121 31.0248 9.78174 23.7892 9.78174Z"
+					fill="black" />
+			</g>
+		</symbol>
+
+		<symbol id="github" width="36" height="36" viewBox="0 0 36 36">
+			<g>
+				<path
+					d="M18 0.75C8.055 0.75 0 8.67 0 18.438C0 26.2545 5.157 32.883 12.3075 35.22C13.2075 35.3865 13.5375 34.839 13.5375 34.3695C13.5375 33.9495 13.5225 32.8365 13.515 31.362C8.508 32.4285 7.452 28.989 7.452 28.989C6.633 26.9475 5.4495 26.4015 5.4495 26.4015C3.819 25.305 5.5755 25.3275 5.5755 25.3275C7.383 25.4505 8.3325 27.15 8.3325 27.15C9.9375 29.8545 12.546 29.073 13.575 28.6215C13.737 27.477 14.2005 26.6985 14.715 26.256C10.7175 25.8135 6.516 24.2925 6.516 17.5155C6.516 15.585 7.2135 14.007 8.3685 12.7695C8.166 12.3225 7.5585 10.524 8.526 8.088C8.526 8.088 10.0335 7.614 13.476 9.9015C14.916 9.5085 16.446 9.3135 17.976 9.3045C19.506 9.3135 21.036 9.5085 22.476 9.9015C25.896 7.614 27.4035 8.088 27.4035 8.088C28.371 10.524 27.7635 12.3225 27.5835 12.7695C28.731 14.007 29.4285 15.585 29.4285 17.5155C29.4285 24.3105 25.221 25.806 21.216 26.241C21.846 26.772 22.431 27.8565 22.431 29.514C22.431 31.881 22.4085 33.783 22.4085 34.3575C22.4085 34.821 22.7235 35.3745 23.646 35.1975C30.8475 32.8755 36 26.2425 36 18.438C36 8.67 27.9405 0.75 18 0.75Z"
+					fill="#212121" />
+			</g>
+		</symbol>
+
+		<symbol id="telegram" viewBox="0 0 48 48">
+			<path
+				d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+				fill="#039BE5" />
+			<path
+				d="M10.9815 23.48L34.1216 14.558C35.1956 14.17 36.1336 14.82 35.7856 16.444L35.7875 16.442L31.8475 35.004C31.5555 36.32 30.7736 36.64 29.6796 36.02L23.6796 31.598L20.7855 34.386C20.4655 34.706 20.1955 34.976 19.5755 34.976L20.0015 28.87L31.1215 18.824C31.6056 18.398 31.0135 18.158 30.3755 18.582L16.6336 27.234L10.7095 25.386C9.42355 24.978 9.39555 24.1 10.9815 23.48Z"
+				fill="white" />
+		</symbol>
+
+		<symbol id="vk" viewBox="0 0 48 48">
+			<path
+				d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+				fill="#4D76A1" />
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M23.0933 34.5261H24.977C24.977 34.5261 25.546 34.4637 25.8365 34.1505C26.1039 33.863 26.0953 33.3231 26.0953 33.3231C26.0953 33.3231 26.0585 30.7955 27.2316 30.4233C28.388 30.0567 29.873 32.8662 31.447 33.9464C32.6372 34.764 33.5416 34.5847 33.5416 34.5847L37.7501 34.5261C37.7501 34.5261 39.9517 34.3905 38.9078 32.6595C38.8222 32.5179 38.2998 31.3791 35.7787 29.0389C33.1399 26.5896 33.4933 26.9858 36.672 22.749C38.6079 20.1688 39.3818 18.5936 39.1401 17.9189C38.9095 17.2763 37.4857 17.4462 37.4857 17.4462L32.7471 17.4757C32.7471 17.4757 32.3959 17.4278 32.1353 17.5835C31.8808 17.7362 31.7169 18.0922 31.7169 18.0922C31.7169 18.0922 30.967 20.0888 29.9667 21.7869C27.8567 25.3699 27.013 25.559 26.6682 25.3365C25.866 24.818 26.0662 23.2534 26.0662 22.142C26.0662 18.6697 26.5929 17.222 25.0408 16.8472C24.5257 16.7227 24.1466 16.6406 22.8293 16.6273C21.1386 16.6098 19.7075 16.6324 18.8972 17.0295C18.3582 17.2934 17.9423 17.8817 18.1956 17.9155C18.5088 17.9574 19.2181 18.1067 19.5941 18.6188C20.0797 19.2794 20.0626 20.7631 20.0626 20.7631C20.0626 20.7631 20.3416 24.8505 19.411 25.3583C18.7723 25.7066 17.8961 24.9955 16.015 21.7449C15.0511 20.0798 14.3234 18.2394 14.3234 18.2394C14.3234 18.2394 14.183 17.8954 13.9328 17.7114C13.629 17.4885 13.2046 17.4175 13.2046 17.4175L8.70178 17.447C8.70178 17.447 8.02582 17.4658 7.77768 17.7598C7.55693 18.0212 7.76014 18.5619 7.76014 18.5619C7.76014 18.5619 11.2854 26.8095 15.277 30.9658C18.937 34.7764 23.0933 34.5261 23.0933 34.5261Z"
+				fill="white" />
+		</symbol>
+
+		<symbol id="facebook" viewBox="0 0 48 48">
+			<path
+				d="M23.9999 0C37.2555 0 48 10.746 48 24.0001C48 37.2557 37.2555 48 23.9999 48C10.7443 48 0 37.2555 0 24.0001C0 10.746 10.7445 0 23.9999 0Z"
+				fill="#3B5998" />
+			<path
+				d="M26.9219 16.5224H30.0149V11.9534H26.379V11.9699C21.9734 12.1259 21.0705 14.6024 20.9909 17.2034H20.9819V19.485H17.9819V23.9594H20.9819V35.9533H25.5029V23.9594H29.2064L29.9218 19.485H25.5044V18.1065C25.5044 17.2275 26.0893 16.5224 26.9219 16.5224Z"
+				fill="white" />
+		</symbol>
+
+		<symbol id="whatsapp" viewBox="0 0 48 48">
+			<g clip-path="url(#clip0_122:1120)">
+				<path
+					d="M23.9871 0.0126458C10.7401 0.0154567 0.00357906 10.7566 0.00638989 24.0036C0.00732684 28.5906 1.32364 33.0811 3.79905 36.9428L0.0672913 46.6251C-0.131435 47.1401 0.124914 47.7186 0.639859 47.9174C0.755009 47.9618 0.877281 47.9845 1.00068 47.9844C1.11517 47.9849 1.22882 47.9653 1.33648 47.9264L11.3306 44.3585C22.5751 51.3617 37.3677 47.9234 44.3709 36.6788C51.374 25.4342 47.9357 10.6416 36.6912 3.63853C32.8795 1.2645 28.4778 0.00824217 23.9871 0.0126458Z"
+					fill="#55CD6C" />
+				<path
+					d="M35.422 28.0979C35.422 28.0979 32.9735 26.8986 31.4404 26.0992C29.7054 25.2057 27.6666 26.8787 26.7072 27.8302C25.214 27.2566 23.8502 26.3908 22.6956 25.2836C21.5882 24.1292 20.7225 22.7654 20.1491 21.272C21.1005 20.3106 22.7695 18.2738 21.8801 16.5388C21.0905 15.0037 19.8813 12.5572 19.8813 12.5552C19.7116 12.2185 19.3669 12.0059 18.9898 12.0055H16.991C14.0801 12.5083 11.9636 15.0482 11.994 18.002C11.994 21.1401 15.7497 27.1686 18.2823 29.703C20.8148 32.2375 26.8433 35.9913 29.9833 35.9913C32.9371 36.0217 35.477 33.9051 35.9798 30.9943V28.9955C35.9801 28.6144 35.7638 28.2663 35.422 28.0979Z"
+					fill="#FAFAFA" />
+			</g>
+		</symbol>
+	</svg>
+
+
+	<div class="header-top header-top--mobile">
+		<div class="container">
+
+			<div class="header-top__row">
+				<ul class="navigation" id="header-menu">
+					<li class="navigation__item">
+						<a href="#aboutme">Навыки</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#portfolio">Портфолио</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#timeline">Как я работаю</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#contacts">Контакты</a>
+					</li>
+				</ul>
+				<div class="icons">
+					<!-- <a href="#">
+							<svg>
+								<use href="#linkedin"></use>
+							</svg> -->
+
+					</a>
+					<a href="https://github.com/Filimonov-Vadim" target="_blank">
+						<svg>
+							<use href="#github"></use>
+						</svg>
+
+					</a>
+				</div>
+
+				<div class="header-top__row-name logo">
+					<p>HTML Верстальщик</p>
+				</div>
+				<!-- Иконка навигации -->
+				<div class="nav-icon">
+					<div class="nav-icon__middle"></div>
+				</div>
+
+				<!--Моб. навигация  -->
+				<nav class="nav">
+					<a href="#aboutme">Навыки</a>
+					<a href="#portfolio">Портфолио</a>
+					<a href="#timeline">Как я работаю</a>
+					<a href="#contacts">Контакты</a>
+
+					<div class="soc-icons">
+						<a href="https://t.me/vadfilwork" target="_blank">
+							<svg>
+								<use href="#telegram"></use>
+							</svg>
+						</a>
+						<a href="https://vk.com/id6025028" target="_blank">
+							<svg>
+								<use href="#vk"></use>
+							</svg>
+						</a>
+						<a href="https://www.facebook/profile.php?id=100033268924012" target="_blank">
+							<svg>
+								<use href="#facebook"></use>
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/p/COxhOyHJw3A/?utm_medium=share_sheet" target="_blank">
+							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_122:1113)">
+									<path
+										d="M2.99991 3.26603C-0.77209 7.18403 -8.97646e-05 11.346 -8.97646e-05 23.99C-8.97646e-05 34.49 -1.83209 45.016 7.75591 47.494C10.7499 48.264 37.2779 48.264 40.2679 47.49C44.2599 46.46 47.5079 43.222 47.9519 37.576C48.0139 36.788 48.0139 11.206 47.9499 10.402C47.4779 4.38803 43.7759 0.922032 38.8979 0.220032C37.7799 0.0580318 37.5559 0.0100318 31.8199 3.17544e-05C11.4739 0.0100318 7.01391 -0.895968 2.99991 3.26603Z"
+										fill="url(#paint0_linear_122:1113)" />
+									<path
+										d="M23.9961 6.27803C16.7341 6.27803 9.83812 5.63203 7.20412 12.392C6.11612 15.184 6.27412 18.81 6.27412 24.002C6.27412 28.558 6.12812 32.84 7.20412 35.61C9.83212 42.374 16.7841 41.726 23.9921 41.726C30.9461 41.726 38.1161 42.45 40.7821 35.61C41.8721 32.79 41.7121 29.218 41.7121 24.002C41.7121 17.078 42.0941 12.608 38.7361 9.25203C35.3361 5.85203 30.7381 6.27803 23.9881 6.27803H23.9961ZM22.4081 9.47203C37.5561 9.44803 39.4841 7.76403 38.4201 31.158C38.0421 39.432 31.7421 38.524 23.9981 38.524C9.87812 38.524 9.47212 38.12 9.47212 23.994C9.47212 9.70403 10.5921 9.48003 22.4081 9.46803V9.47203ZM33.4561 12.414C32.2821 12.414 31.3301 13.366 31.3301 14.54C31.3301 15.714 32.2821 16.666 33.4561 16.666C34.6301 16.666 35.5821 15.714 35.5821 14.54C35.5821 13.366 34.6301 12.414 33.4561 12.414ZM23.9961 14.9C18.9701 14.9 14.8961 18.976 14.8961 24.002C14.8961 29.028 18.9701 33.102 23.9961 33.102C29.0221 33.102 33.0941 29.028 33.0941 24.002C33.0941 18.976 29.0221 14.9 23.9961 14.9ZM23.9961 18.094C31.8061 18.094 31.8161 29.91 23.9961 29.91C16.1881 29.91 16.1761 18.094 23.9961 18.094Z"
+										fill="white" />
+								</g>
+								<defs>
+									<linearGradient id="paint0_linear_122:1113" x1="3.09195" y1="44.9342" x2="47.7029"
+										y2="6.32398" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFDD55" />
+										<stop offset="0.5" stop-color="#FF543E" />
+										<stop offset="1" stop-color="#C837AB" />
+									</linearGradient>
+									<clipPath id="clip0_122:1113">
+										<rect width="48" height="48" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+
+						</a>
+						<a href="https://wa.me/79282232927" target="_blank">
+							<svg>
+								<use href="#whatsapp"></use>
+							</svg>
+
+						</a>
+
+						<a href="https://github.com/Filimonov-Vadim" target="_blank">
+							<svg>
+								<use href="#github"></use>
+							</svg>
+
+						</a>
+					</div>
+
+					<div class="connection-email">
+						<a href="mailto:askafil1983@gmail.com">askafil1983@gmail.com</a>
+					</div>
+				</nav>
+
+				<div class="overlay"></div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__main">
+				<div class="header__main-info">
+					<div class="header__main-title">
+						<h1 class="title-1 gradient">
+							Вадим Филимонов
+						</h1>
+					</div>
+
+					<p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением
+						ТЗ. </p>
+
+					<div class="header__main-btn">
+						<a href="./resume/Филимонов Вадим-верстальщик HTML-CSS.pdf" class="button btn--color"
+							target="_blank">Познакомиться</a>
+						<a href="#contacts" class="button">Контакты</a>
+					</div>
+				</div>
+				<div class="header__main-img">
+					<img src="./img/header/header1.jpg" alt="Work">
+				</div>
+			</div>
+
+			<div class="header__img">
+				<img src="./img/header/header-bg.png" alt="Workplace">
+			</div>
+
+			<div class="header__aboutme" id="aboutme">
+				<div class="header__aboutme-info">
+					<div class="header__aboutme-info-title">
+						<h3 class="title-3">Что я умею:</h3>
+					</div>
+					<ul class="header__aboutme-list">
+						<li>pixel perfect, полное соответствие макету</li>
+						<li>верстаю с сеткой или без</li>
+						<li>адаптивная верстка под мобильные устройства</li>
+						<li>оптимизация по retina экраны</li>
+						<li>с Bootstrap и без него</li>
+					</ul>
+				</div>
+
+				<div class="header__aboutme-connection">
+					<div class="header__aboutme-connection-title">
+						<h3 class="title-3">На связи:</h3>
+					</div>
+					<div class="soc-icons">
+						<a href="https://t.me/vadfilwork" target="_blank">
+							<svg>
+								<use href="#telegram"></use>
+							</svg>
+						</a>
+						<a href="https://vk.com/id6025028" target="_blank">
+							<svg>
+								<use href="#vk"></use>
+							</svg>
+						</a>
+						<a href="https://www.facebook/profile.php?id=100033268924012" target="_blank">
+							<svg>
+								<use href="#facebook"></use>
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/p/COxhOyHJw3A/?utm_medium=share_sheet" target="_blank">
+							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_122:1113)">
+									<path
+										d="M2.99991 3.26603C-0.77209 7.18403 -8.97646e-05 11.346 -8.97646e-05 23.99C-8.97646e-05 34.49 -1.83209 45.016 7.75591 47.494C10.7499 48.264 37.2779 48.264 40.2679 47.49C44.2599 46.46 47.5079 43.222 47.9519 37.576C48.0139 36.788 48.0139 11.206 47.9499 10.402C47.4779 4.38803 43.7759 0.922032 38.8979 0.220032C37.7799 0.0580318 37.5559 0.0100318 31.8199 3.17544e-05C11.4739 0.0100318 7.01391 -0.895968 2.99991 3.26603Z"
+										fill="url(#paint0_linear_122:1113)" />
+									<path
+										d="M23.9961 6.27803C16.7341 6.27803 9.83812 5.63203 7.20412 12.392C6.11612 15.184 6.27412 18.81 6.27412 24.002C6.27412 28.558 6.12812 32.84 7.20412 35.61C9.83212 42.374 16.7841 41.726 23.9921 41.726C30.9461 41.726 38.1161 42.45 40.7821 35.61C41.8721 32.79 41.7121 29.218 41.7121 24.002C41.7121 17.078 42.0941 12.608 38.7361 9.25203C35.3361 5.85203 30.7381 6.27803 23.9881 6.27803H23.9961ZM22.4081 9.47203C37.5561 9.44803 39.4841 7.76403 38.4201 31.158C38.0421 39.432 31.7421 38.524 23.9981 38.524C9.87812 38.524 9.47212 38.12 9.47212 23.994C9.47212 9.70403 10.5921 9.48003 22.4081 9.46803V9.47203ZM33.4561 12.414C32.2821 12.414 31.3301 13.366 31.3301 14.54C31.3301 15.714 32.2821 16.666 33.4561 16.666C34.6301 16.666 35.5821 15.714 35.5821 14.54C35.5821 13.366 34.6301 12.414 33.4561 12.414ZM23.9961 14.9C18.9701 14.9 14.8961 18.976 14.8961 24.002C14.8961 29.028 18.9701 33.102 23.9961 33.102C29.0221 33.102 33.0941 29.028 33.0941 24.002C33.0941 18.976 29.0221 14.9 23.9961 14.9ZM23.9961 18.094C31.8061 18.094 31.8161 29.91 23.9961 29.91C16.1881 29.91 16.1761 18.094 23.9961 18.094Z"
+										fill="white" />
+								</g>
+								<defs>
+									<linearGradient id="paint0_linear_122:1113" x1="3.09195" y1="44.9342" x2="47.7029"
+										y2="6.32398" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFDD55" />
+										<stop offset="0.5" stop-color="#FF543E" />
+										<stop offset="1" stop-color="#C837AB" />
+									</linearGradient>
+									<clipPath id="clip0_122:1113">
+										<rect width="48" height="48" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+
+						</a>
+						<a href="https://wa.me/79282232927" target="_blank">
+							<svg>
+								<use href="#whatsapp"></use>
+							</svg>
+
+						</a>
+					</div>
+					<div class="connection-email header__aboutme-connection-email">
+						<a href="mailto:askafil1983@gmail.com">askafil1983@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="porfolio__title">
+				<h2 class="title-2 gradient">Портфолио</h2>
+			</div>
+
+			<div class="mix-block">
+				<!-- <div class="mix-block__btn">
+						<button type="button" data-filter = "all" class="mix-block__btn-all">Все проекты</button>
+						<button type="button" data-filter = ".site">Сайты</button>
+						<button type="button" data-filter = ".lend">Лендинги</button>
+					</div> -->
+
+				<div class="portfolio__card-wrapper" id="mix-cards">
+					<!-- Card-big  -->
+					<a href="https://filwork.ru/project/forest-trevel/index.html" target="_blank" class="card-big mix site">
+						<div class="card-big__img">
+							<img src="./img/portfolio/forest-trevel.jpg" alt="forest-trevel">
+							<span>Смотреть проект</span>
+						</div>
+						<div class="card-big__title">
+							<h4 class="title-4">Верстка “Форест тревел”</h4>
+							<p>Верстка многостраничного сайта</p>
+						</div>
+
+
+					</a>
+					<!--// Card-big  -->
+					<!-- Card-big  -->
+					<a href="https://filwork.ru/project/unit-project/index.html" target="_blank" class="card-big mix lend">
+						<div class="card-big__img">
+							<img src="./img/portfolio/unit.jpg" alt="unit">
+							<span>Смотреть проект</span>
+						</div>
+						<div class="card-big__title">
+							<h4 class="title-4">Сайт приложения “Юнит”</h4>
+							<p>Верстка лендинга</p>
+						</div>
+					</a>
+					<!--//Card- big  -->
+
+					<!-- Card  -->
+					<a href="https://filwork.ru/project/freight-transportation/index.html" target="_blank"
+						class="card mix lend">
+						<div class="card__img">
+							<img src="./img/portfolio/freight-transportation.jpg" alt="freight-transportation">
+							<span>Смотреть проект</span>
+						</div>
+						<div class="card__title">
+							<h4 class="title-5">Сайт приложения “Грузовые Перевозки”</h4>
+							<p>Верстка лендинга</p>
+						</div>
+					</a>
+					<!--//Card -->
+					<!-- Card  -->
+					<!-- <a href="#" class="card mix site">
+							<div class="card__img">
+								<img src="./img/portfolio/portfolio-2.jpg" alt="portfolio-2">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__title">
+								<h4 class="title-5">Верстка “Мир Авто”</h4>
+								<p>Верстка многостраничного сайта </p>
+							</div>
+						</a> -->
+					<!--//Card -->
+					<!-- Card  -->
+					<!-- <a href="#" class="card mix site">
+							<div class="card__img">
+								<img src="./img/portfolio/portfolio-3.jpg" alt="portfolio-3">
+								<span>Смотреть проект</span>
+							</div>
+							<div class="card__title">
+								<h4 class="title-5">Верстка “Мир Авто”</h4>
+								<p>Верстка многостраничного сайта </p>
+							</div>
+						</a> -->
+					<!--//Card -->
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+	<div class="timeline" id="timeline">
+		<div class="container">
+			<div class="timeline__title">
+				<h2 class="title-2 gradient">Как я работаю</h2>
+			</div>
+			<div class="timeline__step-wrapper">
+				<!-- Timeline__step -->
+				<div class="step">
+					<div class="step__icons"></div>
+					<div class="step__text" data-aos="zoom-in-down">
+						<div class="step__text-title">
+							<h5 class="title-6 gradient">Оцениваю макет</h5>
+						</div>
+						<p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+						<span>Время: 2 часа</span>
+					</div>
+				</div>
+				<!-- // Timeline__step -->
+				<!-- Timeline__step -->
+				<div class="step">
+					<div class="step__icons"></div>
+					<div class="step__text" data-aos="zoom-in-down">
+						<div class="step__text-title">
+							<h5 class="title-6 gradient">ТЗ, смета и график работ</h5>
+						</div>
+						<p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.
+						</p>
+						<span>Время: 2 - 4 часа</span>
+					</div>
+				</div>
+				<!-- // Timeline__step -->
+				<!-- Timeline__step -->
+				<div class="step">
+					<div class="step__icons"></div>
+					<div class="step__text" data-aos="zoom-in-down">
+						<div class="step__text-title">
+							<h5 class="title-6 gradient">Вы держите руку на пульсе</h5>
+						</div>
+						<p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное
+							состояние проекта и задач.</p>
+					</div>
+				</div>
+				<!-- // Timeline__step -->
+				<!-- Timeline__step -->
+				<div class="step">
+					<div class="step__icons"></div>
+					<div class="step__text" data-aos="zoom-in-down">
+						<div class="step__text-title">
+							<h5 class="title-6 gradient">Выполняю каждый этап</h5>
+						</div>
+						<p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.
+						</p>
+					</div>
+				</div>
+				<!-- // Timeline__step -->
+				<!-- Timeline__step -->
+				<div class="step">
+					<div class="step__icons"></div>
+					<div class="step__text" data-aos="zoom-in-down">
+						<div class="step__text-title">
+							<h5 class="title-6 gradient">Финальное ревью проекта</h5>
+						</div>
+						<p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю
+							сайт на хостинг заказчика.</p>
+						<span>Время: 2 - 4 часа</span>
+					</div>
+				</div>
+				<!-- // Timeline__step -->
+				<!-- // Timeline__step-wrapper -->
+			</div>
+		</div>
+	</div>
+
+	<div class="contacts" id="contacts">
+		<div class="container">
+			<div class="contacts__title">
+				<h2 class="title-2 gradient">Контакты</h2>
+			</div>
+			<div class="contacts__wrapper">
+				<div class="contacts__info">
+					<div class="contacts__text">
+						<p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над
+							проектом — напишите мне.
+						</p>
+					</div>
+
+					<div class="connection">
+						<div class="connection-email">
+							<span>Email</span>
+							<a href="mailto:askafil1983@gmail.com">askafil1983@gmail.com</a>
+						</div>
+						<div class="connection-phone">
+							<span>Телефон</span>
+							<a href="tel:+79282232927">+7 (928) 223-29-27</a>
+						</div>
+					</div>
+
+					<div class="soc-icons">
+						<a href="https://t.me/vadfilwork" target="_blank">
+							<svg>
+								<use href="#telegram"></use>
+							</svg>
+						</a>
+						<a href="https://vk.com/id6025028" target="_blank">
+							<svg>
+								<use href="#vk"></use>
+							</svg>
+						</a>
+						<a href="https://www.facebook/profile.php?id=100033268924012" target="_blank">
+							<svg>
+								<use href="#facebook"></use>
+							</svg>
+						</a>
+						<a href="https://www.instagram.com/p/COxhOyHJw3A/?utm_medium=share_sheet" target="_blank">
+							<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_122:1113)">
+									<path
+										d="M2.99991 3.26603C-0.77209 7.18403 -8.97646e-05 11.346 -8.97646e-05 23.99C-8.97646e-05 34.49 -1.83209 45.016 7.75591 47.494C10.7499 48.264 37.2779 48.264 40.2679 47.49C44.2599 46.46 47.5079 43.222 47.9519 37.576C48.0139 36.788 48.0139 11.206 47.9499 10.402C47.4779 4.38803 43.7759 0.922032 38.8979 0.220032C37.7799 0.0580318 37.5559 0.0100318 31.8199 3.17544e-05C11.4739 0.0100318 7.01391 -0.895968 2.99991 3.26603Z"
+										fill="url(#paint0_linear_122:1113)" />
+									<path
+										d="M23.9961 6.27803C16.7341 6.27803 9.83812 5.63203 7.20412 12.392C6.11612 15.184 6.27412 18.81 6.27412 24.002C6.27412 28.558 6.12812 32.84 7.20412 35.61C9.83212 42.374 16.7841 41.726 23.9921 41.726C30.9461 41.726 38.1161 42.45 40.7821 35.61C41.8721 32.79 41.7121 29.218 41.7121 24.002C41.7121 17.078 42.0941 12.608 38.7361 9.25203C35.3361 5.85203 30.7381 6.27803 23.9881 6.27803H23.9961ZM22.4081 9.47203C37.5561 9.44803 39.4841 7.76403 38.4201 31.158C38.0421 39.432 31.7421 38.524 23.9981 38.524C9.87812 38.524 9.47212 38.12 9.47212 23.994C9.47212 9.70403 10.5921 9.48003 22.4081 9.46803V9.47203ZM33.4561 12.414C32.2821 12.414 31.3301 13.366 31.3301 14.54C31.3301 15.714 32.2821 16.666 33.4561 16.666C34.6301 16.666 35.5821 15.714 35.5821 14.54C35.5821 13.366 34.6301 12.414 33.4561 12.414ZM23.9961 14.9C18.9701 14.9 14.8961 18.976 14.8961 24.002C14.8961 29.028 18.9701 33.102 23.9961 33.102C29.0221 33.102 33.0941 29.028 33.0941 24.002C33.0941 18.976 29.0221 14.9 23.9961 14.9ZM23.9961 18.094C31.8061 18.094 31.8161 29.91 23.9961 29.91C16.1881 29.91 16.1761 18.094 23.9961 18.094Z"
+										fill="white" />
+								</g>
+								<defs>
+									<linearGradient id="paint0_linear_122:1113" x1="3.09195" y1="44.9342" x2="47.7029"
+										y2="6.32398" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#FFDD55" />
+										<stop offset="0.5" stop-color="#FF543E" />
+										<stop offset="1" stop-color="#C837AB" />
+									</linearGradient>
+									<clipPath id="clip0_122:1113">
+										<rect width="48" height="48" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+
+						</a>
+						<a href="https://wa.me/79282232927" target="_blank">
+							<svg>
+								<use href="#whatsapp"></use>
+							</svg>
+
+						</a>
+					</div>
+
+				</div>
+
+				<div>
+					<form action="#" class="contacts-form">
+						<div class="form-item">
+							<span class="fake-placeholder">Ваш Email</span>
+							<input type="email" name="email" class="form-field">
+						</div>
+
+						<div class="form-item">
+							<span class="fake-placeholder">Текст сообщения</span>
+							<textarea name="message" class="form-field" id="#" cols="30" rows="10"></textarea>
+						</div>
+
+						<div class="form-item">
+							<input type="submit" value="Отправить" class="button btn--color form-btn">
+						</div>
+					</form>
+					<div id="answer"></div>
+				</div>
+			</div>
+
+			<div class="contacts-icons">
+				<img src="./img/contacts/path.png" alt="path">
+				<img src="./img/contacts/path.png" alt="path">
+			</div>
+
+
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__copyright">
+				<p>&copy; 2021 &mdash; Вадим Филимонов</p>
+			</div>
+			<div class="footer__text">
+				<p>Веб-разработчик из Краснодара, занимаюсь версткой и созданием сайтов. </p>
+				<p>
+					Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="https://webcademy.ru/"
+						target="_blank">WebCademy.ru</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#top" class="backtop-btn">&#8679;</a>
+
+
+	<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+
+	<script src="./libs/pagenav/nav.js"></script>
+
+	<script src="./libs/mixitup/mixitup.min.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="./libs/jqueryvalidate/jquery.validate.min.js"></script>
+
+	<script src="./js/main.js"></script>
+</body>
+
+</html>

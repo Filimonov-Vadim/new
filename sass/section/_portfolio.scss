@@ -1,0 +1,66 @@
+.portfolio {
+    padding-top: 95px;
+    padding-bottom: 90px;
+    margin-top: -15px;
+    background: linear-gradient(0deg, #F5FBFF, #F5FBFF), #F4F8F9;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-top: -45px;
+        padding-top: 95px;
+        padding-bottom: 60px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-top: 0;
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+}
+
+.porfolio__title {
+    margin-bottom: 65px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin-bottom: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+    }
+
+    .gradient {
+        background-position: center bottom 8px;
+        background-size: 100% 8px;
+
+        /* Mobile */
+        @media (max-width: 899px) {
+            background-position: center bottom 4px;
+        }
+    }
+}
+
+.portfolio__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -25px -15px;
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+        margin: -20px -15px;
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        margin: -10px -15px;
+    }
+
+    /* Mobile XS */
+    @media (max-width: 767px) {
+        margin: -15px 0px;
+    }
+}
+

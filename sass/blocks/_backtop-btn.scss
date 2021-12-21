@@ -1,0 +1,18 @@
+.backtop-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 50px;
+	z-index: 1;
+	font-size: 50px;
+	color: red !important;
+	display: inline-block;
+
+	/* Mobile XS */
+	@media (max-width: 599px) {
+		font-size: 30px;
+	}
+
+	&:hover {
+		color: #1a71d2 !important;
+	}
+}

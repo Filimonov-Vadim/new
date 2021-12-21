@@ -1,0 +1,11 @@
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 20px;
+
+    /* Mobile XS */
+    @media (max-width: 400px) {
+        margin-left: 0;
+    }
+}
